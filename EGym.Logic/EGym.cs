@@ -14,6 +14,8 @@ namespace EGym.Logic
         public IEnumerable<Trainer> Trainers { get; set; }
         public IEnumerable<Client> Clients { get; set; }
 
+        public IDataManager DataManager { get; set; }
+
 
     }
 }
