@@ -33,12 +33,25 @@ namespace EGym.Logic
 
         public bool CheckTrainerAvailability(int trainerId, DateTime startDate, DateTime endDate)
         {
-            var result = Bookings.FirstOrDefault(b => (b.TrainerId == trainerId) && Utility.CheckDate(b.StartTime, b.EndTime, startDate, endDate));
-            if (result != null)
+            var result = Bookings.FirstOrDefault(b => b.TrainerId == trainerId);
+            //sino hay ningún Trainer en la lista de Bookings con ese Id es porque ese Trainer esta libre
+            if (result == null)
             {
-                return false;
+                return true;
             }
-            return true;
+            //si hay un Trainer reservado en la lista de Bookings pero la fecha solicitada no se solapa con la fecha de este booking,
+            //el Trainer esta disponible.
+            if (!Utility.CheckDate(result.StartTime, result.EndTime, startDate, endDate))
+            {
+                return true;
+            }
+            return false;
+        }
+
+        public void BookActivity(int activityId, int trainerId, DateTime startDate, DateTime endDate)
+        {
+            var booking = new Booking() { ActivityId = activityId, TrainerId = trainerId, StartTime = startDate, EndTime = endDate};
+            DataManager.RegisterActivity(booking);
         }
 
        
