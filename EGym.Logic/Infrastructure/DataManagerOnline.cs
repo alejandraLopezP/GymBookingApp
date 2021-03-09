@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace EGym.Logic.Infrastructure
 {
-    public class DataManagerDB : IDataManager
+    public class DataManagerOnline : IDataManager
     {
         public bool CancelActivity(Booking booking)
         {

@@ -43,7 +43,8 @@
   <ItemGroup>
     <Compile Include="EGym.cs" />
     <Compile Include="Infrastructure\DataManagerDB.cs" />
-    <Compile Include="Infrastructure\DataManagerMock.cs" />
+    <Compile Include="Infrastructure\DataManagerOnline.cs" />
+    <Compile Include="Infrastructure\DataManagerSimulator.cs" />
     <Compile Include="Infrastructure\IDataManager.cs" />
     <Compile Include="Models\Activity\Activity.cs" />
     <Compile Include="Models\People\Client.cs" />
