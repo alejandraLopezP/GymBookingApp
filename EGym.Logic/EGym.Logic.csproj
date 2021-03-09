@@ -47,6 +47,7 @@
     <Compile Include="Infrastructure\DataManagerSimulator.cs" />
     <Compile Include="Infrastructure\IDataManager.cs" />
     <Compile Include="Models\Activity\Activity.cs" />
+    <Compile Include="Models\Machine\Machine.cs" />
     <Compile Include="Models\People\Client.cs" />
     <Compile Include="Models\People\Trainer.cs" />
     <Compile Include="Models\Relations\Booking.cs" />
