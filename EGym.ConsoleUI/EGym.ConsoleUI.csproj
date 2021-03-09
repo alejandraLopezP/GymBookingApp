@@ -49,5 +49,11 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\EGym.Logic\EGym.Logic.csproj">
+      <Project>{64625d20-0997-4268-b4eb-bd5431b5875d}</Project>
+      <Name>EGym.Logic</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -1,0 +1,10 @@
+C:\Users\allop\source\Repos\EGym\EGym.ConsoleUI\bin\Debug\EGym.ConsoleUI.exe.config
+C:\Users\allop\source\Repos\EGym\EGym.ConsoleUI\bin\Debug\EGym.ConsoleUI.exe
+C:\Users\allop\source\Repos\EGym\EGym.ConsoleUI\bin\Debug\EGym.ConsoleUI.pdb
+C:\Users\allop\source\Repos\EGym\EGym.ConsoleUI\bin\Debug\EGym.Logic.dll
+C:\Users\allop\source\Repos\EGym\EGym.ConsoleUI\bin\Debug\EGym.Logic.pdb
+C:\Users\allop\source\Repos\EGym\EGym.ConsoleUI\obj\Debug\EGym.ConsoleUI.csprojAssemblyReference.cache
+C:\Users\allop\source\Repos\EGym\EGym.ConsoleUI\obj\Debug\EGym.ConsoleUI.csproj.CoreCompileInputs.cache
+C:\Users\allop\source\Repos\EGym\EGym.ConsoleUI\obj\Debug\EGym.ConsoleUI.csproj.CopyComplete
+C:\Users\allop\source\Repos\EGym\EGym.ConsoleUI\obj\Debug\EGym.ConsoleUI.exe
+C:\Users\allop\source\Repos\EGym\EGym.ConsoleUI\obj\Debug\EGym.ConsoleUI.pdb

@@ -34,6 +34,11 @@ namespace EGym.Logic
 
         }
 
+        public object ShowSchedule()
+        {
+            return "This is the schedule for today: ";
+        }
+
         public bool CheckMachineAvailability(int machineId, DateTime startDate)
         {
             var result = Machines.FirstOrDefault(m => m.Id == machineId);
