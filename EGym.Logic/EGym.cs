@@ -12,6 +12,7 @@ namespace EGym.Logic
     {
         public IEnumerable<Activity> Activities { get; set; }
         public IEnumerable<Trainer> Trainers { get; set; }
+        public IEnumerable<Client> Clients { get; set; }
 
 
     }
