@@ -42,13 +42,15 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="EGym.cs" />
+    <Compile Include="Infrastructure\DataManagerDB.cs" />
+    <Compile Include="Infrastructure\DataManagerMock.cs" />
+    <Compile Include="Infrastructure\IDataManager.cs" />
     <Compile Include="Models\Activity\Activity.cs" />
     <Compile Include="Models\People\Client.cs" />
     <Compile Include="Models\People\Trainer.cs" />
+    <Compile Include="Models\Relations\Booking.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Infrastructure\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
