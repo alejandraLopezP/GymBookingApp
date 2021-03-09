@@ -1,5 +1,6 @@
 ﻿using EGym.Logic.Infrastructure;
 using EGym.Logic.Models.Activity;
+using EGym.Logic.Models.Machine;
 using EGym.Logic.Models.People;
 using EGym.Logic.Models.Relations;
 using EGym.Logic.Utilities;
