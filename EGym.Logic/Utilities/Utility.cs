@@ -12,5 +12,10 @@ namespace EGym.Logic.Utilities
         {
             throw new NotImplementedException();
         }
+
+        internal static bool IsMachineReparationDate(DateTime reparationDate, DateTime startDate)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

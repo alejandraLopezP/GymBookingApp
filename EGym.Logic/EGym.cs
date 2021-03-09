@@ -34,6 +34,21 @@ namespace EGym.Logic
 
         }
 
+        public bool CheckMachineAvailability(int machineId, DateTime startDate)
+        {
+            var result = Machines.FirstOrDefault(m => m.Id == machineId);
+
+            if (result == null)
+            {
+                return false;
+            }
+
+            if (Utility.IsMachineReparationDate(result.ReparationDate, startDate))
+            {
+                return false;
+            }
+            return true;
+        }
         public bool CheckTrainerAvailability(int trainerId, DateTime startDate, DateTime endDate)
         {
             var result = Bookings.FirstOrDefault(b => b.TrainerId == trainerId);
@@ -56,6 +71,8 @@ namespace EGym.Logic
             var booking = new Booking() { ActivityId = activityId, TrainerId = trainerId, StartTime = startDate, EndTime = endDate};
             DataManager.RegisterActivity(booking);
         }
+
+        
 
        
 

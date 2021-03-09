@@ -8,6 +8,7 @@ namespace EGym.Logic.Models.Machine
 {
     public class Machine
     {
-
+        public int Id { get; set; }
+        public DateTime ReparationDate { get; set; }
     }
 }
