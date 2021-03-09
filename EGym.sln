@@ -3,7 +3,25 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30717.126
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EGym.Logic", "EGym.Logic\EGym.Logic.csproj", "{64625D20-0997-4268-B4EB-BD5431B5875D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EGym.ConsoleUI", "EGym.ConsoleUI\EGym.ConsoleUI.csproj", "{8E00FA11-538E-456F-95D8-0CB6888EEAA9}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{64625D20-0997-4268-B4EB-BD5431B5875D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{64625D20-0997-4268-B4EB-BD5431B5875D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{64625D20-0997-4268-B4EB-BD5431B5875D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{64625D20-0997-4268-B4EB-BD5431B5875D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8E00FA11-538E-456F-95D8-0CB6888EEAA9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8E00FA11-538E-456F-95D8-0CB6888EEAA9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8E00FA11-538E-456F-95D8-0CB6888EEAA9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8E00FA11-538E-456F-95D8-0CB6888EEAA9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
