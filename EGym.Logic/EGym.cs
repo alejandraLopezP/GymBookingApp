@@ -2,6 +2,7 @@
 using EGym.Logic.Models.Activity;
 using EGym.Logic.Models.People;
 using EGym.Logic.Models.Relations;
+using EGym.Logic.Utilities;
 using System;
 using System.Collections.Generic;
 using System.Linq;
