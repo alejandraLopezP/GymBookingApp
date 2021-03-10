@@ -13,6 +13,6 @@ namespace EGym.Logic.Models.Relations
         public DateTime StartTime { get; set; }
         public DateTime EndTime { get; set; }
         public List<int> ClientIds { get; set; }
-        
+        public object Id { get; internal set; }
     }
 }

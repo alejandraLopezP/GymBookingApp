@@ -11,7 +11,7 @@ namespace EGym.Logic.Models.Activity
         public DateTime StartTime { get; set; }
         public DateTime BookingDate { get; set; }
         public int Duration { get; set; }
-
+        public object Id { get; internal set; }
 
         public Activity(DateTime startTime, DateTime bookningDate, int duration)
         {

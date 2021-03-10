@@ -8,5 +8,6 @@ namespace EGym.Logic.Models.People
 {
     public class Trainer
     {
+        public int Id { get; set; }
     }
 }

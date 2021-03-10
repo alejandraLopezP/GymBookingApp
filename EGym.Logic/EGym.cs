@@ -14,18 +14,12 @@ namespace EGym.Logic
 {
     public class EGym
     {
-        public IEnumerable<Activity> Activities { get; set; }
-        public IEnumerable<Trainer> Trainers { get; set; }
-        public IEnumerable<Client> Clients { get; set; }
-        public IEnumerable<Booking> Bookings { get; set; }
-        public IEnumerable<Machine> Machines { get; set; }
+      
 
         public IDataManager DataManager { get; set; }
         
 
         
-
-
 
         public EGym()
         {
@@ -41,7 +35,7 @@ namespace EGym.Logic
 
         public bool CheckMachineAvailability(int machineId, DateTime startDate)
         {
-            var result = Machines.FirstOrDefault(m => m.Id == machineId);
+            var result = DataManager.Machines.FirstOrDefault(m => m.Id == machineId);
 
             if (result == null)
             {
@@ -56,7 +50,7 @@ namespace EGym.Logic
         }
         public bool CheckTrainerAvailability(int trainerId, DateTime startDate, DateTime endDate)
         {
-            var result = Bookings.FirstOrDefault(b => b.TrainerId == trainerId);
+            var result = DataManager.Bookings.FirstOrDefault(b => b.TrainerId == trainerId);
             //sino hay ningún Trainer en la lista de Bookings con ese Id es porque ese Trainer esta libre
             if (result == null)
             {
@@ -71,13 +65,24 @@ namespace EGym.Logic
             return false;
         }
 
-        public void BookActivity(int activityId, int trainerId, DateTime startDate, DateTime endDate)
+        public void BookActivity(int activityId, int trainerId, DateTime startDate, DateTime endDate, List<int> clientIds)
         {
-            var booking = new Booking() { ActivityId = activityId, TrainerId = trainerId, StartTime = startDate, EndTime = endDate};
-            DataManager.RegisterActivity(booking);
+            var booking = new Booking() { ActivityId = activityId, TrainerId = trainerId, StartTime = startDate, EndTime = endDate, ClientIds = clientIds };
+            DataManager.RegisterBooking(booking);
+            
         }
 
+        public bool RegisterClient(int id, string name)
+        {
+            var client = new Client() { Id = id, Name = name };
+            DataManager.RegisterClientInSystem(client);
+            return true;
+        }
         
+        public IEnumerable<Client> ListAllClients()
+        {
+            return DataManager.Clients;
+        }
 
        
 
