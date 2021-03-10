@@ -11,13 +11,14 @@ namespace EGym.Logic.Models.Activity
         public DateTime StartTime { get; set; }
         public DateTime BookingDate { get; set; }
         public int Duration { get; set; }
-        public object Id { get; internal set; }
+        public int Id { get; set; }
 
-        public Activity(DateTime startTime, DateTime bookningDate, int duration)
+        public Activity(DateTime startTime, DateTime bookningDate, int duration, int id)
         {
             this.StartTime = startTime;
             this.BookingDate = bookningDate;
             this.Duration = duration;
+            this.Id = id;
         }
 
         public virtual string GetActivityType()

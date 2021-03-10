@@ -16,7 +16,7 @@ namespace EGym.Logic
     {
       
 
-        public IDataManager DataManager { get; set; }
+        private IDataManager DataManager { get; set; }
         
 
         
@@ -84,8 +84,20 @@ namespace EGym.Logic
             return DataManager.Clients;
         }
 
-       
+        public bool CheckUserId(int customerId)
+        {
+            var result = DataManager.Clients.FirstOrDefault(c => c.Id == customerId);
+            if (result != null)
+            {
+                return true;
+            }
+            return false;
+        }
 
-
+        public void RegisterActivity(int id, DateTime dateBuilt)
+        {
+            var activity = new Activity(dateBuilt, dateBuilt, 24, id);
+            DataManager.RegisterActivity(activity);
+        }
     }
 }

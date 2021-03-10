@@ -4,3 +4,9 @@ C:\Users\allop\source\Repos\EGym\EGym.Logic\obj\Debug\EGym.Logic.csprojAssemblyR
 C:\Users\allop\source\Repos\EGym\EGym.Logic\obj\Debug\EGym.Logic.csproj.CoreCompileInputs.cache
 C:\Users\allop\source\Repos\EGym\EGym.Logic\obj\Debug\EGym.Logic.dll
 C:\Users\allop\source\Repos\EGym\EGym.Logic\obj\Debug\EGym.Logic.pdb
+C:\Users\allop\source\ReposMolk\GymBookingApp\EGym\EGym.Logic\bin\Debug\EGym.Logic.dll
+C:\Users\allop\source\ReposMolk\GymBookingApp\EGym\EGym.Logic\bin\Debug\EGym.Logic.pdb
+C:\Users\allop\source\ReposMolk\GymBookingApp\EGym\EGym.Logic\obj\Debug\EGym.Logic.csprojAssemblyReference.cache
+C:\Users\allop\source\ReposMolk\GymBookingApp\EGym\EGym.Logic\obj\Debug\EGym.Logic.csproj.CoreCompileInputs.cache
+C:\Users\allop\source\ReposMolk\GymBookingApp\EGym\EGym.Logic\obj\Debug\EGym.Logic.dll
+C:\Users\allop\source\ReposMolk\GymBookingApp\EGym\EGym.Logic\obj\Debug\EGym.Logic.pdb
