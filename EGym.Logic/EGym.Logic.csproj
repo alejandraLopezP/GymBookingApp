@@ -43,10 +43,13 @@
   <ItemGroup>
     <Compile Include="EGym.cs" />
     <Compile Include="Infrastructure\DataManagerDB.cs" />
-    <Compile Include="Infrastructure\DataManagerOnline.cs" />
     <Compile Include="Infrastructure\DataManagerSimulator.cs" />
     <Compile Include="Infrastructure\IDataManager.cs" />
     <Compile Include="Models\Activity\Activity.cs" />
+    <Compile Include="Models\Activity\ConsultationWithTrainer.cs" />
+    <Compile Include="Models\Activity\IndividualTraining.cs" />
+    <Compile Include="Models\Activity\IndividualWithTrainer.cs" />
+    <Compile Include="Models\Activity\TrainingInGroup.cs" />
     <Compile Include="Models\Machine\Machine.cs" />
     <Compile Include="Models\People\Client.cs" />
     <Compile Include="Models\People\Trainer.cs" />

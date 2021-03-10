@@ -12,11 +12,17 @@ namespace EGym.Logic.Models.Activity
         public DateTime BookingDate { get; set; }
         public int Duration { get; set; }
 
+
         public Activity(DateTime startTime, DateTime bookningDate, int duration)
         {
             this.StartTime = startTime;
             this.BookingDate = bookningDate;
             this.Duration = duration;
+        }
+
+        public virtual string GetActivityType()
+        {
+            return "Base Activity";
         }
     }
 }
